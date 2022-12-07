@@ -42,6 +42,7 @@ class LeeRequest {
       this.hooks?.responseHookCatch
     )
   }
+
   request(config) {
     return new Promise((resolve, reject) => {
       if (config.hooks?.requestHook) {
